@@ -1,0 +1,11 @@
+amount = int(input("Enter an amount: "))
+
+print(f"{amount // 1000} - 1000")
+print(f"{(amount % 1000) // 500} - 500")
+print(f"{(amount % 1000 % 500) // 200} - 200")
+print(f"{(amount % 1000 % 500 % 200) // 100} - 100")
+print(f"{(amount % 1000 % 500 % 200 % 100) // 50} - 50")
+print(f"{(amount % 1000 % 500 % 200 % 100 % 50) // 20} - 20")
+print(f"{(amount % 1000 % 500 % 200 % 100 % 50 % 20) // 10} - 10")
+print(f"{(amount % 1000 % 500 % 200 % 100 % 50 % 20 % 10) // 5} - 5")
+print(f"{(amount % 1000 % 500 % 200 % 100 % 50 % 20 % 10 % 5) // 1} - 1")
