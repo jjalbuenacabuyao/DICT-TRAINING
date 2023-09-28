@@ -28,4 +28,3 @@ elif average >= PASSING_GRADE and failed_subjects == "":
     print("Congratulations, you have passed the semester")
 else:
     print(f"{message}{failed_subjects} subject.")
-

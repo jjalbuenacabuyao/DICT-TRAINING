@@ -1,5 +1,6 @@
 grocery_list = list[str]
 
+
 def print_grocery_items() -> None:
     """
     Print the items in the grocery list.
@@ -13,13 +14,15 @@ def print_grocery_items() -> None:
 
 
 while True:
-    print("""
+    print(
+        """
 MENU:
 1 - Print the Grocery list
 2 - Add the item to the Drocery list
 3 - Remove an item in Grocery List
 4 - Exit
-    """)
+    """
+    )
 
     command = input("Enter command: ")
 
@@ -27,7 +30,7 @@ MENU:
         print_grocery_items()
 
     elif command == "2":
-        item_to_be_added  = input("Enter an item to add on the Grocery list: ").title()
+        item_to_be_added = input("Enter an item to add on the Grocery list: ").title()
         if not item_to_be_added in grocery_list:
             grocery_list.append(item_to_be_added)
             print(f"{item_to_be_added} added to the list")
@@ -41,10 +44,9 @@ MENU:
             print(f"{item_to_be_removed} removed from the list")
         else:
             print(f"{item_to_be_removed} is not on the list.")
-    
+
     elif command == "4":
         break
 
     else:
         print("Invalid command")
-    

@@ -1,11 +1,8 @@
 contacts = []
 
+
 def add_contacts(name: str, phone_number: str, email: str) -> None:
-    user_profile = {
-        "name": name,
-        "phone_number": phone_number,
-        "email": email
-    }
+    user_profile = {"name": name, "phone_number": phone_number, "email": email}
 
     contacts.append(user_profile)
 
@@ -51,12 +48,13 @@ def remove_contact(name: str):
             contacts.remove(contact)
             print(f"{name} deleted successfully")
             return
-        
+
     print("Contact not found")
 
 
 while True:
-    print("""
+    print(
+        """
 Menu:
     a - Add new Contact
     b - Display all contact
@@ -64,8 +62,9 @@ Menu:
     d - Edit a contact
     e - Remove a contact
     f - Exit the program
-""")
-    
+"""
+    )
+
     command = input("Enter command: ").lower()
 
     if command == "a":
@@ -76,16 +75,16 @@ Menu:
 
         add_contacts(name, phone_number, email)
         print(f"{name} added successfully")
-    
+
     elif command == "b":
         display_contacts()
-    
+
     elif command == "c":
         print("SEARCH CONTACT")
         name = input("Enter the name of the person you want to search: ").title()
 
         search_contact(name)
-    
+
     elif command == "d":
         print("EDIT CONTACT")
         name = input("Enter the name of the person you want to edit: ").title()

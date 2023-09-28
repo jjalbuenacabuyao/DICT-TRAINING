@@ -16,8 +16,9 @@ englissh_to_spanish = {
     "grandfather": "abuelo",
     "drink": "bebe",
     "milk": "leche",
-    "orange": "naranja"
+    "orange": "naranja",
 }
+
 
 def translate_to_spanish(word: str):
     if word in englissh_to_spanish:

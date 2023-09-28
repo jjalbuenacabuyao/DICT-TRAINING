@@ -1,8 +1,9 @@
 TAX_RATE = 0.08
 
 sample_price1 = [x for x in range(1, 200)]
-sample_prices2 = [x*2 for x in range(1, 500)]
+sample_prices2 = [x * 2 for x in range(1, 500)]
 sample_prices3 = [x for x in range(1, 1500) if x % 2 == 0]
+
 
 def calculate_total(price_list: list[int | float]) -> float:
     prices_list_with_tax: list[int | float] = []

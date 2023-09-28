@@ -6,7 +6,7 @@ def divide(numerator: int | float, denominator: int | float) -> float | None:
         return None
     else:
         return result
-    
+
 
 result = divide(10, 5)
 

@@ -14,4 +14,3 @@ random_special_character = "".join(random.choices("!@#$%^&*()+=", k=3))
 generated_password = random_letters + random_special_character + str(random_number)
 
 print(generated_password)
-

@@ -6,7 +6,7 @@ try:
 
 except FileNotFoundError:
     print("Error: The file 'sample.txt' was not found.")
-    
+
 except Exception as e:
     print(f"An error occured: {e}")
 

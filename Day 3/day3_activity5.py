@@ -1,4 +1,3 @@
-
 def summation(num: int | float) -> int | float:
     sum = 0
     for i in range(num + 1):

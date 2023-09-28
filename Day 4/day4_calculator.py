@@ -1,5 +1,6 @@
 import math
 
+
 def add(x: int | float, y: int | float) -> int | float:
     return x + y
 
@@ -21,7 +22,7 @@ def modulo(x: int | float, y: int | float) -> int:
 
 
 def exponent(x: int | float, y: int | float) -> int | float:
-    return x ** y
+    return x**y
 
 
 def floor_division(x: int | float, y: int | float) -> int:
@@ -57,7 +58,7 @@ def volume(length: int | float, width: int | float, height: int | float) -> int 
 
 
 def volume_of_cylinder(height: int | float) -> int | float:
-    return (math.pi ** 2) * height
+    return (math.pi**2) * height
 
 
 def area_of_circle(radius: int | float) -> int | float:
@@ -66,4 +67,3 @@ def area_of_circle(radius: int | float) -> int | float:
 
 def speed(distance: int | float, time: int | float) -> int | float:
     return distance / time
-

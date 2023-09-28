@@ -8,7 +8,7 @@ while True:
     elif input_fruit.lower() == "stop":
         print("Loop terminated")
         break
-    else: 
+    else:
         fruits.append(input_fruit)
         print("Fruit added to the list")
 

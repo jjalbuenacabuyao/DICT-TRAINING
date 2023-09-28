@@ -4,4 +4,6 @@ fullname = input("Enter your full name: ").upper()
 
 netpay = gross_salary - deduction
 
-print(f"Hi Sir/Ma'am {fullname} based on the provided information your net pay is {netpay}")
+print(
+    f"Hi Sir/Ma'am {fullname} based on the provided information your net pay is {netpay}"
+)

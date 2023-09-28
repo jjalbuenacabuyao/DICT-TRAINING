@@ -1,8 +1,4 @@
-fruits = {
-    "hello": "world",
-    "world": "hello",
-    "helloworld": "world hello"
-}
+fruits = {"hello": "world", "world": "hello", "helloworld": "world hello"}
 
 print(fruits["hello"])
 
